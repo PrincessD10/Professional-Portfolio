@@ -89,7 +89,7 @@ architectures.
 
 <a
 
-href="/resume.pdf"
+href="/Diana CV.pdf"
 
 target="_blank"
 

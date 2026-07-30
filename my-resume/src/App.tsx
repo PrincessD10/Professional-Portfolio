@@ -162,8 +162,8 @@ const App = () => {
             {/* Uncomment once deployed */}
             
             <p className="project-links">
-              GitHub: github.com/PrincessD10/AWS_DocuTrack-Pro <br />
-              Portfolio: your-portfolio-link.com
+              GitHub: <a>github.com/PrincessD10/AWS_DocuTrack-Pro</a> <br />
+              Portfolio: <a>https://professional-portfolio-iota-three.vercel.app/</a>
             </p>
             
           </div>
