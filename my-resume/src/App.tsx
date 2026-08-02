@@ -131,7 +131,7 @@ const App = () => {
           <h3>Projects</h3>
 
           <div className="project-item">
-            <h4>DocuTrack Pro – Cloud-Based Document Tracking System</h4>
+            <h4>DocuTrack Pro – Cloud-Based Document Management System</h4>
 
             <p className="project-tech">
               <strong>Technologies:</strong> React, TypeScript, AWS Lambda, API Gateway,
@@ -159,12 +159,12 @@ const App = () => {
               </li>
             </ul>
 
-            {/* Uncomment once deployed */}
+            {/* Uncomment once deployed 
             
             <p className="project-links">
               GitHub: <a>github.com/PrincessD10/AWS_DocuTrack-Pro</a> <br />
               Portfolio: <a>https://professional-portfolio-iota-three.vercel.app/</a>
-            </p>
+            </p>*/}
             
           </div>
         </section>
