@@ -1,77 +1,45 @@
-import type {Certification} from "../data/certifications";
+import type { Certification } from "../data/certifications";
 
-
-interface Props{
-
-certification:Certification;
-
+interface Props {
+  certification: Certification;
 }
 
+function CertificationCard({ certification }: Props) {
 
+  return (
 
-function CertificationCard({
+    <div className="certification-card">
 
-certification
+      <h3>
+        {certification.name}
+      </h3>
 
-}:Props){
+      <p>
+        {certification.issuer}
+      </p>
 
+      {certification.date && (
+        <p>
+          {certification.date}
+        </p>
+      )}
 
-return(
+      <p className="certification-description">
+        {certification.description}
+      </p>
 
-<div className="certification-card">
+      <a
+        href={certification.link}
+        target="_blank"
+        rel="noreferrer"
+        className="project-link"
+      >
+        View Certificate
+      </a>
 
+    </div>
 
-<h3>
-
-{certification.name}
-
-</h3>
-
-
-<p>
-
-{certification.issuer}
-
-</p>
-
-
-{
-
-certification.date &&
-
-<p>
-
-{certification.date}
-
-</p>
-
+  );
 }
-
-
-
-<a
-
-href={certification.link}
-
-target="_blank"
-
-rel="noreferrer"
-
-className="project-link"
-
->
-
-View Certificate
-
-</a>
-
-
-</div>
-
-);
-
-
-}
-
 
 export default CertificationCard;

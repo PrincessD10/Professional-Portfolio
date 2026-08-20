@@ -9,13 +9,13 @@ function Projects(){
 
 return(
 
-<section className="projects">
+<section id="projects" className="projects">
 
 
 <div className="container">
 
 
-<p className="subtitle">
+<p className="subtitle-projects">
 
 MY WORK
 
@@ -23,7 +23,7 @@ MY WORK
 
 
 
-<h1 className="section-title">
+<h1 className="section-title-projects">
 
 Projects
 

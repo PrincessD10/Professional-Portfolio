@@ -1,0 +1,224 @@
+/* =========================================
+   NAVIGATION DOCK
+========================================= */
+
+.navigation-dock {
+
+  position: fixed;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+
+  min-height: 72px;
+
+  display: grid;
+
+  grid-template-columns: repeat(7, 1fr);
+
+  align-items: stretch;
+
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-top: 1px solid rgba(10, 102, 194, 0.25);
+
+  box-shadow:
+    0 -6px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* =========================================
+   NAVIGATION ITEM
+========================================= */
+
+.dock-item {
+
+  min-width: 0;
+
+  height: 72px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 6px 4px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #1f2937;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease;
+
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.dock-icon {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 1.15rem;
+
+  color: var(--primary);
+
+  opacity: 1;
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.dock-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #1f2937;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.dock-item:hover {
+  background: rgba(10, 102, 194, 0.06);
+  transform: translateY(-2px);
+}
+
+.dock-item:hover .dock-icon {
+  transform: translateY(-2px) scale(1.08);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .navigation-dock {
+    min-height: 64px;
+  }
+
+  .dock-item {
+    height: 64px;
+  }
+
+  .dock-icon {
+    font-size: 1rem;
+  }
+
+  .dock-label {
+    font-size: 0.62rem;
+  }
+
+}
+
+
+/* =========================================
+   VERY SMALL SCREENS
+========================================= */
+
+@media (max-width: 480px) {
+
+  .navigation-dock {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 54px);
+    min-height: 108px;
+  }
+
+  .dock-item {
+    height: 54px;
+  }
+
+  .dock-icon {
+    font-size: 0.95rem;
+  }
+
+  .dock-label {
+    font-size: 0.58rem;
+  }
+
+}
+
+
+/* =========================================
+   DARK THEME
+========================================= */
+
+[data-theme="dark"] .navigation-dock {
+  background: rgba(20, 25, 35, 0.96);
+  border-top-color: rgba(100, 170, 255, 0.25);
+}
+
+
+[data-theme="dark"] .dock-item {
+  color: #f1f5f9;
+}
+
+
+[data-theme="dark"] .dock-label {
+  color: #f1f5f9;
+}
+
+
+[data-theme="dark"] .dock-icon {
+  color: #69aefc;
+}
+
+
+[data-theme="dark"] .dock-item:hover {
+  background: rgba(105, 174, 252, 0.1);
+}
+
+
+[data-theme="dark"] .footer {
+  color: #f1f5f9;
+}
+
+
+[data-theme="dark"] .footer-message {
+  color: #e2e8f0;
+}
+
+
+[data-theme="dark"] .copyright {
+  color: #94a3b8;
+}

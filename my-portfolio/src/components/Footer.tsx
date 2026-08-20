@@ -1,27 +1,24 @@
-function Footer(){
+function Footer() {
+  return (
+    <footer className="footer">
 
+      <div className="footer-content">
 
-return(
+        <h2>Thank You!</h2>
 
-<footer>
+        <p className="footer-message">
+          Thank you for taking the time to explore my portfolio.
+          I look forward to connecting with you.
+        </p>
 
+        <p className="copyright">
+          © 2026 Awara Diana Tengwi
+        </p>
 
-<p>
+      </div>
 
-© {new Date().getFullYear()} Awara Diana Tengwi.
-
-All rights reserved.
-
-</p>
-
-
-</footer>
-
-
-);
-
-
+    </footer>
+  );
 }
-
 
 export default Footer;

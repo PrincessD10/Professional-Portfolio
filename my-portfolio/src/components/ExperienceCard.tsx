@@ -44,6 +44,11 @@ return(
 </p>
 
 
+<p className="experience-workMode">
+
+{experience.workMode}
+
+</p>
 
 <ul className="experience-responsibilities">
 

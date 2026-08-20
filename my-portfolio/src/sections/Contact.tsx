@@ -1,35 +1,31 @@
+import { useState } from "react";
+
 import profileImage from "../assets/profile.png";
+import dianacv from "../assets/dianacv.pdf";
 
 import ImageFrame from "../components/ImageFrame";
 
-
 import {
-
-FaLinkedin,
-
-FaGithub,
-
-FaWhatsapp,
-
-FaEnvelope,
-
-FaFileAlt,
-
-FaMapMarkerAlt
-
+  FaLinkedin,
+  FaGithub,
+  FaWhatsapp,
+  FaEnvelope,
+  FaFileAlt,
+  FaMapMarkerAlt,
+  FaTimes,
 } from "react-icons/fa";
-
 
 
 function Contact(){
 
+const [showResume, setShowResume] = useState(false);
 
 return (
 
-<section className="contact">
+<section id="contact" className="contact">
 
 
-<div className="container two-column">
+<div className="container two-column-c">
 
 
 <div className="contact-image">
@@ -181,19 +177,14 @@ WhatsApp / Phone
 
 
 
-<a
-
-href="/documents/Diana CV.pdf"
-
-target="_blank"
-
+<button
+  type="button"
+  className="resume-button"
+  onClick={() => setShowResume(true)}
 >
-
-<FaFileAlt/>
-
-Resume
-
-</a>
+  <FaFileAlt />
+  Resume
+</button>
 
 
 </div>
@@ -204,6 +195,43 @@ Resume
 
 </div>
 
+
+{showResume && (
+
+  <div className="resume-modal">
+
+    <div className="resume-viewer">
+
+      <div className="resume-viewer-header">
+
+        <h2>My Resume</h2>
+
+        <button
+          type="button"
+          className="close-resume"
+          onClick={() => setShowResume(false)}
+          aria-label="Close resume"
+        >
+          <FaTimes />
+        </button>
+
+      </div>
+
+
+      <div className="resume-document">
+
+        <iframe
+          src={dianacv}
+          title="Awara Diana Resume"
+        />
+
+      </div>
+
+    </div>
+
+  </div>
+
+)}
 
 </section>
 

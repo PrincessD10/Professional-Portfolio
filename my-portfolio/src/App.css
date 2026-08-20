@@ -493,6 +493,23 @@ body,
     height: 50px;
   }
 }
+/* =========================================
+   SPACE FOR FIXED NAVIGATION DOCK
+========================================= */
+
+main {
+  padding-bottom: 80px;
+}
+
+@media (max-width: 480px) {
+
+  main {
+    padding-bottom: 115px;
+  }
+
+}
+
+
 
 /*//import { useState } from 'react'
 //import reactLogo from './assets/react.svg'

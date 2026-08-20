@@ -1,6 +1,5 @@
-import skillsImage from "../assets/skills.png";
-
-import ImageFrame from "../components/ImageFrame";
+{/*import skillsImage from "../assets/skills.png";
+import ImageFrame from "../components/ImageFrame";*/}
 
 import SkillCard from "../components/SkillCard";
 
@@ -28,13 +27,13 @@ function Skills(){
 
 return (
 
-<section className="skills">
+<section id="skills" className="skills">
 
 
 <div className="container skills-container">
 
 
-<div className="skills-image">
+{/*<div className="skills-image">
 
 
 <ImageFrame>
@@ -52,7 +51,7 @@ alt="IT skills"
 </ImageFrame>
 
 
-</div>
+</div>*/}
 
 
 
