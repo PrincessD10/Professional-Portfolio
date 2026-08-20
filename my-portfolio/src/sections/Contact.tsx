@@ -25,7 +25,7 @@ return (
 <section id="contact" className="contact">
 
 
-<div className="container two-column-c">
+<div className="container two-column-contact">
 
 
 <div className="contact-image">

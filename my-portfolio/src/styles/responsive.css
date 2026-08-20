@@ -444,22 +444,50 @@
      CONTACT
   ----------------------------------------- */
 
-  .contact-content {
+  .two-column-contact {
 
-    text-align: center;
+  display: flex;
 
-  }
+  flex-direction: column;
+
+  gap: 30px;
+
+  align-items: center;
+
+}
 
 
-  .contact-links {
+.contact-image {
 
-    width: 100%;
+  width: 100%;
 
-    align-items: stretch;
+  max-width: 260px;
 
-    gap: 10px;
+  margin: 0 auto;
 
-  }
+  order: 1;
+
+}
+
+
+.contact-content {
+
+  width: 100%;
+
+  text-align: center;
+
+  order: 2;
+
+}
+
+
+.contact-links {
+
+  width: 100%;
+
+  align-items: stretch;
+
+}
 
 
   .contact-links a {
