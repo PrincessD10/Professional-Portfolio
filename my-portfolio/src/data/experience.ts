@@ -68,19 +68,19 @@ workMode: "Remote",
 
 responsibilities:[
 
-"Participated in daily technical and administrative activities.",
+"Built responsive, accessible web pages using semantic HTML5, CSS, and mobile-first design.",
 
-"Assisted with documentation and workflow management.",
+"Developed a React single-page application with client-side routing and shared state management.",
 
-"Applied academic knowledge in a professional environment.",
+"Integrated REST APIs with Axios, handling loading/error states and debounced search.",
 
-"Developed communication and problem-solving skills."
+"Localized a product concept for a real market (Cameroon), including currency and phone validation."
 
 ],
 
 report:
 
-"/documents/NSIF Internship Report.pdf"
+""
 
 
 },

@@ -128,7 +128,7 @@
 
 
 /* =========================================
-   MOBILE
+   MOBILE — NAVIGATION DOCK
 ========================================= */
 
 @media (max-width: 700px) {
@@ -139,6 +139,8 @@
 
   .dock-item {
     height: 64px;
+    padding: 5px 3px;
+    gap: 4px;
   }
 
   .dock-icon {
@@ -153,27 +155,27 @@
 
 
 /* =========================================
-   VERY SMALL SCREENS
+   VERY SMALL SCREENS — NAVIGATION DOCK
 ========================================= */
 
 @media (max-width: 480px) {
 
   .navigation-dock {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 54px);
-    min-height: 108px;
+    min-height: 58px;
   }
 
   .dock-item {
-    height: 54px;
+    height: 58px;
+    padding: 4px 2px;
+    gap: 3px;
   }
 
   .dock-icon {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .dock-label {
-    font-size: 0.58rem;
+    font-size: 0.55rem;
   }
 
 }
