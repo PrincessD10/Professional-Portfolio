@@ -8,11 +8,11 @@ description:string;
 
 technologies:string[];
 
-github:string;
+github?:string;
 
-preview:string;
+preview?:string;
 
-report:string;
+report?:string;
 
 image:string;
 
@@ -52,8 +52,8 @@ github:
 "https://github.com/PrincessD10/AWS_DocuTrack-Pro.git",
 
 
-preview:
-"https://vercel.com/dianas-projects-7c49a078/front-end-l/ATySo7nT4cHeS5SgKWttJyLm5UD4",
+//preview:
+//"https://vercel.com/dianas-projects-7c49a078/front-end-l/ATySo7nT4cHeS5SgKWttJyLm5UD4",
 
 
 report:
@@ -65,11 +65,27 @@ image:
 
 },
 
-/*{
+{
+    title:"Digitalization of CAMTEL Warehouse Management",
 
-title:"Cloud Budget Tracker",
+    role:"Inventory Data Preparation & Reconciliation",
 
-role:"Cloud Developer",
+    description:
+    "Contributed to the digitalization of warehouse management by collecting and recording physical inventory data, preparing it in Excel, and reviewing and treating unreconciled materials identified through the warehouse management application.",
+
+    technologies:[
+        "Microsoft Excel",
+        "Data Preparation",
+        "Inventory Data Management",
+        "Data Reconciliation"
+    ],
+
+    report: "/documents/Digitalization of CAMTEL's Warehouse Management Report.pdf",
+
+    image: "/projects/warehouse.jpeg"
+},
+
+/*{role:"Cloud Developer",
 
 description:
 

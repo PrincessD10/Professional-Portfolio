@@ -20,6 +20,7 @@ body {
   color: #263746;
 }
 
+
 /* =========================================================
    OUTER WEB PAGE
    ========================================================= */
@@ -35,13 +36,14 @@ body {
   padding: 40px 20px;
 }
 
+
 /* =========================================================
-   A4 CV PAPER
+   CV PAPER - WEB VIEW
    ========================================================= */
 
 .resume-container {
   width: 250mm;
-  min-height: 297mm;
+  min-height: 300mm;
 
   display: flex;
   justify-content: center;
@@ -49,7 +51,7 @@ body {
 
 .resume {
   width: 250mm;
-  min-height: 297mm;
+  min-height: 300mm;
 
   background: #ffffff;
 
@@ -59,6 +61,7 @@ body {
 
   text-align: left;
 }
+
 
 /* =========================================================
    HEADER
@@ -71,46 +74,47 @@ body {
 .header-content {
   display: flex;
   align-items: center;
+
   gap: 28px;
 
   min-height: 180px;
 }
+
 
 /* =========================================================
    PHOTO
    ========================================================= */
 
 .profile-photo-container {
-  /*
-    Photo takes more horizontal space than
-    the information column.
-  */
-  flex: 0 0 20%;
+  /* CHANGE THIS VALUE to control the photo width */
+  width: 35%;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .profile-photo {
-  width: 100%;
-  height: 80%;
-  min-height: 100px;
+  /* CHANGE THESE VALUES to control the photo frame */
+  width: 70%;
+  height: 200px;
 }
 
 .photo-img {
   display: block;
 
-  width: 90%;
-  height:40%;
+  width: 100%;
+  height: 100%;
 
   object-fit: cover;
 
-  border-radius:12px;
+  border-radius: 12px;
 
   border: 1px solid #d6e1eb;
 
   box-shadow: 0 4px 12px rgba(30, 64, 90, 0.12);
 }
+
 
 /* =========================================================
    HEADER INFORMATION
@@ -133,7 +137,7 @@ body {
 .name-title h1 {
   margin: 0 0 8px;
 
-  font-size: 32px;
+  font-size: 34px;
   line-height: 1.15;
 
   color: #1f3a56;
@@ -144,13 +148,14 @@ body {
 .name-title h2 {
   margin: 0;
 
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.4;
 
   color: #2d7db3;
 
   font-weight: 600;
 }
+
 
 /* =========================================================
    CONTACT INFORMATION
@@ -169,7 +174,7 @@ body {
 
   gap: 10px;
 
-  font-size: 14px;
+  font-size: 15px;
 
   color: #465b6d;
 
@@ -191,29 +196,30 @@ body {
 .contact-icon {
   flex-shrink: 0;
 
-  width: 15px;
+  width: 16px;
 
   color: #2d7db3;
 
-  font-size: 14px;
+  font-size: 15px;
 }
+
 
 /* =========================================================
    SECTIONS
    ========================================================= */
 
 .resume-section {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .resume-section h3 {
   position: relative;
 
-  margin: 0 0 12px;
+  margin: 0 0 13px;
 
-  padding-bottom: 6px;
+  padding-bottom: 7px;
 
-  font-size: 19px;
+  font-size: 20px;
 
   color: #1f3a56;
 
@@ -241,19 +247,20 @@ body {
 
   color: #465b6d;
 
-  font-size: 14px;
+  font-size: 15px;
 
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
+
 /* =========================================================
-   EDUCATION / EXPERIENCE
+   EDUCATION / EXPERIENCE / PROJECTS
    ========================================================= */
 
 .education-item,
 .experience-item,
 .project-item {
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 }
 
 .education-item:last-child,
@@ -274,9 +281,9 @@ body {
 .education-item h4,
 .experience-item h4,
 .project-item h4 {
-  margin: 0 0 5px;
+  margin: 0 0 6px;
 
-  font-size: 16px;
+  font-size: 17px;
 
   line-height: 1.35;
 
@@ -291,7 +298,7 @@ body {
 
   color: #2d7db3 !important;
 
-  font-size: 14px !important;
+  font-size: 15px !important;
 
   font-weight: 600;
 }
@@ -301,32 +308,33 @@ body {
 
   color: #718394;
 
-  font-size: 13px;
+  font-size: 14px;
 
   font-style: italic;
 
   white-space: nowrap;
 }
 
+
 /* =========================================================
-   SKILLS
+   TECHNICAL SKILLS
    ========================================================= */
 
 .skills-grid {
   display: grid;
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   column-gap: 35px;
   row-gap: 16px;
 }
 
 .skill-category h4 {
-  margin: 0 0 7px;
+  margin: 0 0 8px;
 
   color: #263f55;
 
-  font-size: 15px;
+  font-size: 16px;
 
   font-weight: 700;
 }
@@ -341,15 +349,15 @@ body {
 .skill-category li {
   position: relative;
 
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 
-  padding-left: 14px;
+  padding-left: 15px;
 
   color: #465b6d;
 
-  font-size: 13.5px;
+  font-size: 14px;
 
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 .skill-category li::before {
@@ -364,16 +372,17 @@ body {
   font-weight: bold;
 }
 
+
 /* =========================================================
    PROJECTS
    ========================================================= */
 
 .project-tech {
-  margin: 5px 0 8px !important;
+  margin: 6px 0 9px !important;
 
   color: #566a7b !important;
 
-  font-size: 13px !important;
+  font-size: 14px !important;
 }
 
 .project-item ul,
@@ -385,14 +394,15 @@ body {
 
 .project-item li,
 .experience-item li {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 
   color: #465b6d;
 
-  font-size: 13.5px;
+  font-size: 14px;
 
-  line-height: 1.45;
+  line-height: 1.5;
 }
+
 
 /* =========================================================
    LANGUAGES
@@ -401,22 +411,23 @@ body {
 .languages {
   display: flex;
 
-  gap: 35px;
+  gap: 40px;
 }
 
 .languages span {
   color: #465b6d;
 
-  font-size: 14px;
+  font-size: 15px;
 
   font-weight: 600;
 }
+
 
 /* =========================================================
    RESPONSIVE WEB VIEW
    ========================================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .page-wrapper {
     padding: 20px 10px;
   }
@@ -432,6 +443,7 @@ body {
     padding: 30px;
   }
 }
+
 
 @media (max-width: 650px) {
   .page-wrapper {
@@ -457,6 +469,7 @@ body {
   }
 
   .profile-photo {
+    width: 100%;
     height: 240px;
   }
 
@@ -465,7 +478,15 @@ body {
   }
 
   .name-title h1 {
-    font-size: 26px;
+    font-size: 28px;
+  }
+
+  .name-title h2 {
+    font-size: 17px;
+  }
+
+  .contact-item {
+    font-size: 14px;
   }
 
   .skills-grid {
@@ -481,7 +502,17 @@ body {
   .date {
     white-space: normal;
   }
+
+  .resume-section p {
+    font-size: 14px;
+  }
+
+  .project-item li,
+  .experience-item li {
+    font-size: 14px;
+  }
 }
+
 
 /* =========================================================
    PRINT / PDF
@@ -534,6 +565,7 @@ body {
 
   a {
     color: inherit !important;
+
     text-decoration: none !important;
   }
 

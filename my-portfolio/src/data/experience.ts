@@ -13,7 +13,7 @@ workMode: "Onsite" | "Remote" | "Hybrid";
 
 responsibilities:string[];
 
-report:string;
+report?:string;
 
 }
 
@@ -36,13 +36,10 @@ workMode: "Onsite",
 
 responsibilities:[
 
-"Participated in daily technical and administrative activities.",
-
-"Assisted with documentation and workflow management.",
-
-"Applied academic knowledge in a professional environment.",
-
-"Developed communication and problem-solving skills."
+"Classified, organized, and maintained documents for efficient storage and retrieval.",
+"Received clients, identified their needs, and provided appropriate guidance.",
+"Managed records accurately while maintaining attention to detail and confidentiality.",
+"Collaborated with colleagues to address client requests and daily workplace needs."
 
 ],
 
@@ -53,8 +50,33 @@ report:
 
 },
 
-
 {
+  institution: "Cameroon Telecommunications (CAMTEL)",
+
+  role: "Network Engineering Intern",
+
+  duration: "3 Months",
+
+  period: "September 2026 - Present",
+
+  workMode: "Onsite",
+
+  responsibilities: [
+    "Gained practical exposure to telecommunications infrastructure, network-related equipment, and technical working environments.",
+
+    "Participated in technical learning activities and departmental assignments under the guidance of experienced personnel.",
+
+    "Contributed to a warehouse management digitalization project through physical inventory, material identification, and inventory data preparation using Microsoft Excel.",
+
+    "Verified physical inventory against existing records, updated inventory files, and helped identify and resolve discrepancies.",
+
+    "Prepared structured inventory data for submission to the responsible team for processing through the warehouse management application."
+  ],
+
+}
+
+
+/*{
 
 institution:"Codveda Technologies",
 
@@ -83,7 +105,7 @@ report:
 ""
 
 
-},
+},*/
 
 
 ];

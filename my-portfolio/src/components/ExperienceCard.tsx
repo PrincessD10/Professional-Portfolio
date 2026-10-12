@@ -70,21 +70,16 @@ experience.responsibilities.map((item)=>(
 
 
 
-<a
-
-href={experience.report}
-
-target="_blank"
-
-rel="noreferrer"
-
-className="project-link"
-
->
-
-View Internship Report
-
-</a>
+{experience.report && (
+  <a
+    href={experience.report}
+    target="_blank"
+    rel="noreferrer"
+    className="project-link"
+  >
+    View Internship Report
+  </a>
+)}
 
 
 

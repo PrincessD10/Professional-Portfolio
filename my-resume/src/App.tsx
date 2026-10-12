@@ -20,7 +20,7 @@ const App = () => {
               <div className="profile-photo-container">
                 <div className="profile-photo">
                   <img
-                    src="/images/profile-pic2.PNG"
+                    src="/images/profilepic.png"
                     alt="Awara Diana Tengwi"
                     className="photo-img"
                   />
@@ -33,8 +33,7 @@ const App = () => {
                   <h1>Awara Diana Tengwi</h1>
 
                   <h2>
-                    Computer Engineering Graduate | Cloud &amp; Cybersecurity
-                    Enthusiast
+                    Computer Engineering Graduate | Aspiring Network Engineer
                   </h2>
                 </div>
 
@@ -87,13 +86,13 @@ const App = () => {
             <h3>Profile</h3>
 
             <p>
-              Computer Engineering graduate specializing in Cloud Computing
-              with hands-on experience developing web applications and
-              implementing cloud-based solutions using AWS services.
-              Experienced in React, TypeScript, serverless architectures,
-              databases, and Linux environments. Interested in building
-              secure, scalable cloud infrastructures with a strong focus on
-              cloud security, network security, and cybersecurity.
+              Computer Engineering graduate specializing in Cloud Computing with a strong interest in
+              network engineering, and IT infrastructure. Experienced in frontend development using 
+              React and TypeScript, as well as implementing cloud-based solutions using AWS services. 
+              Possess hands-on knowledge of the Linux environment, and cloud technologies, while developing
+              practical skills in computer networking, network configuration, troubleshooting, and security. 
+              Interested in building and maintaining secure, reliable, and scalable network infrastructures.
+
             </p>
           </section>
 
@@ -172,10 +171,9 @@ const App = () => {
                 <h4>DevOps, Systems &amp; Tools</h4>
                 <ul>
                   <li>Linux (Ubuntu)</li>
-                  <li>Docker</li>
                   <li>GitHub</li>
                   <li>VS Code</li>
-                  <li>MySQL</li>
+                  <li>CISCO Packet Tracer</li>
                 </ul>
               </div>
             </div>
@@ -223,6 +221,51 @@ const App = () => {
                 </li>
               </ul>
             </div>
+
+            <div className="project-item">
+              <div className="item-heading">
+                <div>
+                  <h4>
+                    Digitalization of CAMTEL's Warehouse Management
+                  </h4>
+                </div>
+              </div>
+
+              <p className="project-tech">
+                <strong>Tools and Skills:</strong> Microsoft Excel, Inventory
+                Management, Data Preparation, Data Verification, Data Reconciliation.
+              </p>
+
+              <ul>
+                <li>
+                  Participated in a warehouse digitalization project involving
+                  physical inventory and data preparation across CAMTEL warehouse
+                  locations in Douala.
+                </li>
+
+                <li>
+                  Counted and identified materials and equipment on-site, recording
+                  inventory details and quantities in Excel using the required format.
+                </li>
+
+                <li>
+                  Cross-checked inventory records against physical stock and helped
+                  identify and correct discrepancies, including inaccurate location
+                  classifications and unreconciled items.
+                </li>
+
+                <li>
+                  Prepared and submitted structured Excel inventory files to the
+                  responsible team for processing through the warehouse management
+                  application.
+                </li>
+
+                <li>
+                  Prepared a dedicated Excel file for accessories to be managed as
+                  kits within the digital platform.
+                </li>
+              </ul>
+            </div>
           </section>
 
           {/* ================= EXPERIENCE ================= */}
@@ -244,23 +287,51 @@ const App = () => {
 
               <ul>
                 <li>
-                  Supported daily administrative operations and internal
-                  document management processes within a public institution.
+                  Document & Records Management (Archiving).
                 </li>
 
                 <li>
-                  Gained exposure to enterprise information workflows and
-                  organizational systems.
+                  Communication & Customer Service.
                 </li>
 
                 <li>
-                  Assisted staff with digital documentation processes and
-                  developed an understanding of institutional IT operations.
+                  Organization & Attention to Detail.
                 </li>
 
                 <li>
-                  Developed professional skills in communication,
-                  organization, and workplace collaboration.
+                  Teamwork & Problem-Solving.
+                </li>
+              </ul>
+            </div>
+
+            <div className="experience-item">
+              <div className="item-heading">
+                <div>
+                  <h4>Network Engineering Intern</h4>
+
+                  <p className="company">
+                    Cameroon Telecommunications (CAMTEL)
+                  </p>
+                </div>
+
+                <span className="date">September 2026 – Present</span>
+              </div>
+
+              <ul>
+                <li>
+                  Gain practical exposure to telecommunications infrastructure,
+                  network-related equipment, and technical working environments.
+                </li>
+
+                <li>
+                  Participate in assigned technical and operational activities
+                  under the guidance of experienced personnel.
+                </li>
+
+                <li>
+                  Contributed to a warehouse management digitalization project
+                  involving physical inventory, data preparation, and inventory
+                  verification using Microsoft Excel.
                 </li>
               </ul>
             </div>

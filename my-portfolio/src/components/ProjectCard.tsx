@@ -1,183 +1,81 @@
 import type { Project } from "../data/projects";
 
-
-interface Props{
-
-project:Project;
-
+interface Props {
+    project: Project;
 }
 
+function ProjectCard({ project }: Props) {
+    return (
+        <div className="project-card">
 
+            <img
+                src={project.image}
+                alt={project.title}
+                className="project-image"
+            />
 
-function ProjectCard({project}:Props){
+            <div className="project-content">
 
+                <h2>
+                    {project.title}
+                </h2>
 
-return(
+                <h4>
+                    {project.role}
+                </h4>
 
-<div className="project-card">
+                <p>
+                    {project.description}
+                </p>
 
+                <div className="technology-list">
+                    {project.technologies.map((tech) => (
+                        <span key={tech}>
+                            {tech}
+                        </span>
+                    ))}
+                </div>
 
-<img
+                <div className="project-actions">
 
-src={project.image}
+                    {project.github && (
+                        <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="project-link"
+                        >
+                            GitHub
+                        </a>
+                    )}
 
-alt={project.title}
+                    {project.preview && (
+                        <a
+                            href={project.preview}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="project-link"
+                        >
+                            Demo
+                        </a>
+                    )}
 
-className="project-image"
+                    {project.report && (
+                        <a
+                            href={project.report}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="project-link secondary"
+                        >
+                            Technical Report
+                        </a>
+                    )}
 
-/>
+                </div>
 
-
-
-<div className="project-content">
-
-
-<h2>
-
-{project.title}
-
-</h2>
-
-
-
-<h4>
-
-{project.role}
-
-</h4>
-
-
-
-<p>
-
-{project.description}
-
-</p>
-
-
-
-<div className="technology-list">
-
-
-{
-
-project.technologies.map((tech)=>(
-
-
-<span key={tech}>
-
-{tech}
-
-</span>
-
-
-))
-
+            </div>
+        </div>
+    );
 }
-
-
-</div>
-
-
-
-<div className="project-actions">
-
-
-<div className="project-actions">
-
-
-<a
-
-href={project.github}
-
-target="_blank"
-
-rel="noreferrer"
-
-className="project-link"
-
->
-
-GitHub
-
-</a>
-
-
-
-<a
-
-href={project.preview}
-
-target="_blank"
-
-rel="noreferrer"
-
-className="project-link"
-
->
-
-Demo
-
-</a>
-
-
-
-<a
-
-href={project.report}
-
-target="_blank"
-
-rel="noreferrer"
-
-className="project-link secondary"
-
->
-
-Technical Report
-
-</a>
-
-
-</div>
-
-{
-
-/*project.architecture &&
-
-<a
-
-href={project.architecture}
-
-target="_blank"
-
-rel="noreferrer"
-
-className="project-link secondary"
-
->
-
-Architecture
-
-</a>*/
-
-}
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-);
-
-
-}
-
-
 
 export default ProjectCard;
