@@ -89,9 +89,11 @@ architectures.
 
 <a
 
-href="/documents/Diana CV.pdf"
+href="/documents/CV.pdf"
 
 target="_blank"
+
+rel="noopener noreferrer"
 
 className="resume-button"
 
