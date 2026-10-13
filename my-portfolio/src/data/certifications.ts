@@ -28,6 +28,21 @@ export const certifications: Certification[] = [
 
     link: "/certificates/cisco-introduction-to-cybersecurity.pdf"
 
-  }
+  },
+
+  {
+  name: "Certificate of Participation",
+
+  issuer: "CAMTEL",
+
+  date: "October 2026",
+
+  description:
+    "Participated in inventory counting at CAMTEL telecommunications warehouses in Douala as part of the CAMTEL Warehouse Digitalization Project 2026 (WMS-CT).",
+  
+    link: "/certificates/certificate-of-participation.pdf"
+}
+
+
 
 ];
