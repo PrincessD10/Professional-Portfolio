@@ -89,7 +89,8 @@ architectures.
 
 <a
 
-href="/documents/Diana CV.pdf"
+href="/documents/Diana CV
+.pdf"
 
 target="_blank"
 
