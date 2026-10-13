@@ -38,43 +38,56 @@ const App = () => {
                 </div>
 
                 <div className="contact-info">
-                  <div className="contact-item">
-                    <FaMapMarkerAlt className="contact-icon" />
-                    <span>Douala, Cameroon</span>
+                  {/* Row 1: Location and Phone */}
+                  <div className="contact-row">
+                    <div className="contact-item">
+                      <FaMapMarkerAlt className="contact-icon" />
+                      <span>Douala, Cameroon</span>
+                    </div>
+
+                    <span className="contact-separator">|</span>
+
+                    <div className="contact-item">
+                      <FaPhone className="contact-icon" />
+                      <span>+237 680 939 424</span>
+                    </div>
                   </div>
 
-                  <div className="contact-item">
-                    <FaPhone className="contact-icon" />
-                    <span>+237 680 939 424</span>
+                  {/* Row 2: Email and LinkedIn */}
+                  <div className="contact-row">
+                    <div className="contact-item">
+                      <FaEnvelope className="contact-icon" />
+                      <a href="mailto:awaradiana40@gmail.com">
+                        awaradiana40@gmail.com
+                      </a>
+                    </div>
+
+                    <span className="contact-separator">|</span>
+
+                    <div className="contact-item">
+                      <FaLinkedin className="contact-icon" />
+                      <a
+                        href="https://www.linkedin.com/in/awara-diana"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        linkedin.com/in/awara-diana
+                      </a>
+                    </div>
                   </div>
 
-                  <div className="contact-item">
-                    <FaEnvelope className="contact-icon" />
-                    <a href="mailto:awaradiana40@gmail.com">
-                      awaradiana40@gmail.com
-                    </a>
-                  </div>
-
-                  <div className="contact-item">
-                    <FaLinkedin className="contact-icon" />
-                    <a
-                      href="https://www.linkedin.com/in/awara-diana"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      linkedin.com/in/awara-diana
-                    </a>
-                  </div>
-
-                  <div className="contact-item">
-                    <FaGithub className="contact-icon" />
-                    <a
-                      href="https://github.com/PrincessD10"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      github.com/PrincessD10
-                    </a>
+                  {/* Row 3: GitHub */}
+                  <div className="contact-row">
+                    <div className="contact-item">
+                      <FaGithub className="contact-icon" />
+                      <a
+                        href="https://github.com/PrincessD10"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        github.com/PrincessD10
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -86,12 +99,13 @@ const App = () => {
             <h3>Profile</h3>
 
             <p>
-              Computer Engineering graduate specializing in Cloud Computing with a strong interest in
-              network engineering, and IT infrastructure. Experienced in frontend development using 
-              React and TypeScript, as well as implementing cloud-based solutions using AWS services. 
-              Possess hands-on knowledge of the Linux environment, and cloud technologies, while developing
-              practical skills in computer networking, network configuration, troubleshooting, and security. 
-              Interested in building and maintaining secure, reliable, and scalable network infrastructures.
+              Computer Engineering graduate specializing in Cloud Computing, 
+              with a strong interest in network engineering and IT infrastructure. 
+              Experienced in frontend development with React and TypeScript, 
+              AWS cloud solutions, and Linux environments, while developing 
+              practical skills in networking, troubleshooting, and security. 
+              Passionate about building secure, reliable, and scalable network 
+              infrastructures.
 
             </p>
           </section>
@@ -136,23 +150,21 @@ const App = () => {
 
             <div className="skills-grid">
               <div className="skill-category">
-                <h4>Frontend Development</h4>
+                <h4>Frontend</h4>
                 <ul>
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>React</li>
-                  <li>TypeScript</li>
                 </ul>
               </div>
 
               <div className="skill-category">
                 <h4>Cloud &amp; AWS</h4>
                 <ul>
-                  <li>AWS EC2</li>
                   <li>Amazon S3</li>
                   <li>AWS Lambda</li>
                   <li>Amazon RDS</li>
-                  <li>API Gateway</li>
+
                 </ul>
               </div>
 
@@ -168,12 +180,12 @@ const App = () => {
               </div>*/}
 
               <div className="skill-category">
-                <h4>DevOps, Systems &amp; Tools</h4>
+                <h4>Systems &amp; Tools</h4>
                 <ul>
                   <li>Linux (Ubuntu)</li>
                   <li>GitHub</li>
                   <li>VS Code</li>
-                  <li>CISCO Packet Tracer</li>
+                  {/*<li>CISCO Packet Tracer</li>*/}
                 </ul>
               </div>
             </div>
@@ -215,10 +227,10 @@ const App = () => {
                   reliability.
                 </li>
 
-                <li>
+                {/*<li>
                   Designed a responsive user interface using React and
                   TypeScript to streamline document submission and tracking.
-                </li>
+                </li>*/}
               </ul>
             </div>
 
@@ -238,32 +250,27 @@ const App = () => {
 
               <ul>
                 <li>
-                  Participated in a warehouse digitalization project involving
-                  physical inventory and data preparation across CAMTEL warehouse
-                  locations in Douala.
+                  Participated in a warehouse digitalization project involving physical 
+                  inventory and data preparation across CAMTEL warehouse locations in Douala.
                 </li>
 
                 <li>
-                  Counted and identified materials and equipment on-site, recording
-                  inventory details and quantities in Excel using the required format.
+                  Conducted on-site material identification and counting, recording inventory 
+                  details and quantities in Excel using the required format.
                 </li>
 
                 <li>
-                  Cross-checked inventory records against physical stock and helped
-                  identify and correct discrepancies, including inaccurate location
-                  classifications and unreconciled items.
+                  Cross-checked inventory records against physical stock, 
+                  helped resolve discrepancies, unreconciled items, and 
+                  prepared Excel files for processing through the warehouse 
+                  management application.
                 </li>
 
-                <li>
+                {/*<li>
                   Prepared and submitted structured Excel inventory files to the
                   responsible team for processing through the warehouse management
                   application.
-                </li>
-
-                <li>
-                  Prepared a dedicated Excel file for accessories to be managed as
-                  kits within the digital platform.
-                </li>
+                </li>*/}
               </ul>
             </div>
           </section>
